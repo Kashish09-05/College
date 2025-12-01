@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Dilmure - Mock Landing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- CONTENT SAME AS BEFORE, CSS MOVED TO dilmure_style.css -->
+    <!-- After you confirm, I'll generate dilmure_style.css in a new file. -->
+
+    <header>
+      <div class="nav">
+        <div class="brand">
+          <img
+            src="/mnt/data/907c6ec2-8257-4cad-8418-2bf86047ac43.png"
+            alt="Dilmure logo mock"
+          />
+          <div class="brand-name">Dilmure</div>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <button class="btn ghost" id="loginBtn">Login</button>
+          <button class="btn" id="buyBtn">Buy Now</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-left">
+          <span class="kicker">Real Ingredients</span>
+          <h1>Fiery Peri-Peri Snacks — Crunch & Flavor</h1>
+          <p class="lead">
+            Handcrafted, crunchy snack bites made with real spices and quality
+            ingredients. No trans fat, no cholesterol, and no artificial
+            preservatives.
+          </p>
+          <div class="cta-row">
+            <button class="btn" id="shopNow">Shop Now</button>
+            <button class="btn ghost" id="learnMore">Learn More</button>
+          </div>
+
+          <div class="info">
+            <div class="card">
+              <h3>Nutritional Highlights</h3>
+              <p class="sub">
+                Cholesterol free · Trans fat free · No MSG · No artificial
+                preservatives
+              </p>
+            </div>
+            <div class="card">
+              <h3>Why Dilmure?</h3>
+              <p class="sub">
+                Quality ingredients, small-batch roasting, and an obsession with
+                crunch.
+              </p>
+            </div>
+          </div>
+
+          <div class="features">
+            <div class="feature">
+              <strong>100% Natural</strong><small>Real spices</small>
+            </div>
+            <div class="feature">
+              <strong>Low Fat</strong><small>Carefully cooked</small>
+            </div>
+            <div class="feature">
+              <strong>Gluten Free</strong><small>Wheat-free recipe</small>
+            </div>
+            <div class="feature">
+              <strong>Guilt Free</strong><small>Snack confidently</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="product-mock"></div>
+        </div>
+      </section>
+
+      <section class="heart" id="products">
+        <h2>Meet Our Heart</h2>
+        <div class="product-row">
+          <div class="product-card">
+            <div class="img"></div>
+            <h4>Fiery Peri-Peri</h4>
+            <p>Crunchy & spicy</p>
+          </div>
+          <div class="product-card">
+            <div class="img"></div>
+            <h4>Cheesy Tomato</h4>
+            <p>Tomato cheese hit</p>
+          </div>
+          <div class="product-card">
+            <div class="img"></div>
+            <h4>Minty Delight</h4>
+            <p>Fresh mint twist</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small
+        >© Dilmure Mock — created for demo. Images taken from provided
+        screenshot.</small
+      >
+    </footer>
+
+    <script>
+      document
+        .getElementById("shopNow")
+        .addEventListener("click", () => alert("Added to cart (demo)."));
+      document
+        .getElementById("learnMore")
+        .addEventListener("click", () =>
+          document
+            .getElementById("products")
+            .scrollIntoView({ behavior: "smooth" })
+        );
+      document
+        .getElementById("buyBtn")
+        .addEventListener("click", () => (window.location.hash = "#products"));
+      document
+        .getElementById("loginBtn")
+        .addEventListener("click", () => alert("Login modal (demo)."));
+    </script>
+  </body>
+</html>
